@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["prettier", "airbnb-typescript"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "operator-linebreak": "off",
+    "max-len": ["error", { "code": 120 }],
+    "object-curly-newline": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "linebreak-style": 0
+  }
+}
